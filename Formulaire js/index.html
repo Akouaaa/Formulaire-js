@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Mon premier Formulaire js</title>
+
+</head>
+<body>
+
+    <h1>Formulaire </h1>
+   <form id="js_form">
+        <div class="row">
+            <div class="labelRow">
+            <label>Nom</label>
+        </div>
+            <div class="inputRow">
+            <input type="text" id="name" name="name" placeholder="Entrez votre nom">
+            </div>
+        </div>
+        <div class="row">
+            <div class="labelRow">
+                <label>Email</label>
+           </div>
+          <div class="inputRow">
+                <input type="email" id="email" name="email" placeholder="Entrez votre email">
+          </div>
+       </div>
+
+         <div class="row">
+             <div class="labelRow">
+                 <label>Indiquez votre satisfaction de 1 à 10</label>
+            </div>
+           <div class="inputRow">
+                <input type="number" id="satisfaction" name="satisfaction" placeholder="Numéro de 1 à 10">
+           </div>
+        </div>
+
+
+        <div class="row">
+             <div class="labelRow">
+                 <label>Qui nest votre coach</label>
+            </div>
+            <div class="inputRow ">
+                <select id="coach" name="coach">
+                    <option>Birante</option>
+                    <option>Malick Ba</option>
+                    <option>Mamadou</option>
+                </select>
+            </div>
+         </div>
+
+        <div class="row"> 
+            <div class="labelRow">
+                <label for="">Décrivez votre expérience jusque là</label>
+            </div>
+            <div class="inputRow">
+                <textarea id="message" name="message" cols="30" rows="5" placeholder="Décrivez votre expérience ici"></textarea>
+            </div>
+        </div>
+        
+        <div class="submitRow">
+            <input value="Vérifier" type="submit" onclick="displayInput()">
+       </div>
+        
+
+        <div id="Output"></div>
+    </form>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
